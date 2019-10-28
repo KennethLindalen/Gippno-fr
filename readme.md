@@ -67,3 +67,4 @@
 * [ ] Rate limiting (Hvor mange forsøk på innlogging)
     * [ ] Stoppe bruteforce innloggingsforsøk
 * [ ] Hvis logget inn og går til logginn-/registreringssiden redirekt til dashboard
+* [ ] Hvis utlogget inn og går til dashboard redirekt til home
