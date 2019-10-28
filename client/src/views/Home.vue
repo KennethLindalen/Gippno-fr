@@ -13,13 +13,13 @@
       </p>
       <p class="lead pb-1">
         <router-link :to="{name:'signup'}"
-                     class="btn btn-primary btn-lg float-right ml-2"
+                     class="btn btn-primary btn-lg float-right ml-2 px-5"
                      role="button">
         Sign Up</router-link>
         <router-link :to="{name:'login'}"
-                     class="btn btn-primary btn-lg float-right"
+                     class="btn btn-primary btn-lg float-right px-5"
                      role="button">
-        Login</router-link>
+        Log in</router-link>
       </p>
     </div>
     <h2>News</h2>
@@ -29,16 +29,18 @@
         <h4 class="card-title">Opening day</h4>
         <h6 class="card-subtitle mb-2 text-muted">10.27.2019 9:26PM</h6>
         <p class="card-text">
-          While this might not have come to the offical release date it is
+          While this might not have come to the official release date it is
           currently in alpha, therefore everyone that joins get the first 2 months for free.
-          Some feedback would be highly appriciated so we can further improve our services!
+          Some feedback would be highly appreciated so we can further improve our services!
           <br />
           <br />Thanks,
           <br />- The Gippno team
         </p>
         <router-link :to="{name:'news'}"
                      href="#"
-                     class="card-link">Click to view more of the article</router-link>
+                     class="card-link">
+          Click to view more of the article
+        </router-link>
       </div>
     </div>
     <div class="card mb-2">

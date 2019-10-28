@@ -33,16 +33,6 @@
     
 ### Hovedside
 * [x] Landingside
-    * [x] Innloggingsside
-        * [ ] Form: epost og passord
-            * [ ] Verifiser passord
-                * [ ] Når form blir "submitted"
-                    * [ ] Valider epost
-                        * [ ] Vis error
-                    * [ ] Valider passord
-                        * [ ] Vis error
-                    * [ ] POST-forespørsel
-                        * [ ] Vis error
     * [x] Registreringsside
         * [x] Form: epost og passord
             * [x] Verifiser passord
@@ -55,6 +45,19 @@
                 * [x] Vis error
                 * [x] Hvis suksess
                     * [x] Redirekt til login
+    * [x] Innloggingssside
+        * [x] Form: epost og passord
+            * [ ] Verifiser epost
+            * [ ] Verifiser passord
+        * [ ] Når form blir "submitted"
+            * [ ] Valider epost
+                * [ ] Vis error
+            * [ ] Valider passord
+                * [ ] Vis error
+            * [ ] POST-forespørsel
+                * [ ] Vis error
+                * [ ] Hvis suksess
+                    * [ ] Redirekt til dashboard
 
 ### Ekstra stuff
 * [ ] Adminside med alle brukere
@@ -63,3 +66,4 @@
 * [ ] Admin kan se alle sider på siden
 * [ ] Rate limiting (Hvor mange forsøk på innlogging)
     * [ ] Stoppe bruteforce innloggingsforsøk
+* [ ] Hvis logget inn og går til logginn-/registreringssiden redirekt til dashboard

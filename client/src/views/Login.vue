@@ -2,7 +2,7 @@
   <div>
     <div class="jumbotron pt-3">
       <h1>Log in</h1>
-      <div class="alert alert-danger mt-5" role="alert" v-if="this.errorMsg">
+      <div class="alert alert-danger mp-3" role="alert" v-if="this.errorMsg">
         {{this.errorMsg}}
       </div>
       <form>
@@ -14,14 +14,19 @@
           <input type="password" class="form-control" id="password"
                  placeholder="Password" required>
           </div>
-        <button type="submit" class="btn btn-primary float-right px-5">Login</button>
+        <button type="submit" class="btn btn-primary float-right px-5">Log in</button>
       </form>
     </div>
   </div>
 </template>
 <script>
+/* eslint-disable */
 export default {
-
+    data() {
+      return {
+          errorMsg: ''
+      }
+  },
 };
 </script>
 <style scoped>
