@@ -57,6 +57,7 @@
             * [ ] POST-forespørsel
                 * [ ] Vis error
                 * [ ] Hvis suksess
+                    * [ ] Lagre JWT token i localStorage
                     * [ ] Redirekt til dashboard
 
 ### Ekstra stuff
@@ -68,3 +69,4 @@
     * [ ] Stoppe bruteforce innloggingsforsøk
 * [ ] Hvis logget inn og går til logginn-/registreringssiden redirekt til dashboard
 * [ ] Hvis utlogget inn og går til dashboard redirekt til home
+* [ ] Beskyttet route backend

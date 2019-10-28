@@ -1,20 +1,21 @@
 <template>
   <div>
-    <div class="jumbotron pt-3">
-      <h1>Log in</h1>
-      <div class="alert alert-danger mp-3" role="alert" v-if="this.errorMsg">
+    <div class="jumbotron pt-3 pb-4">
+      <h1>Login</h1>
+      <div class="alert alert-warning mp-3" role="alert" v-if="this.errorMsg">
         {{this.errorMsg}}
       </div>
-      <form>
+      <form @submit.prevent="login">
         <div class="form-group">
           <label for="email">Email address</label>
           <input type="email" class="form-control" id="email"
-                 aria-describedby="email help" placeholder="Enter email" required>
+                 aria-describedby="email help"
+                 placeholder="Enter your email" required v-model="user.epost">
           <label for="password">Password</label>
           <input type="password" class="form-control" id="password"
-                 placeholder="Password" required>
+                 placeholder="Password" required v-model="user.passord">
           </div>
-        <button type="submit" class="btn btn-primary float-right px-5">Log in</button>
+        <button type="submit" class="btn btn-primary" style="width: 100%">Login</button>
       </form>
     </div>
   </div>
@@ -24,9 +25,23 @@
 export default {
     data() {
       return {
-          errorMsg: ''
+          errorMsg: '',
+          user: {
+              epost: '',
+              password: '',
+          }
       }
   },
+    methods: {
+        login(){
+          if(this.validUser()){
+
+          }
+        },
+        validUser(){
+
+        }
+    }
 };
 </script>
 <style scoped>

@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="jumbotron pt-3">
-      <h1>Signup</h1>
+    <div class="jumbotron pt-3 pb-4">
+      <h1>Sign up</h1>
       <div v-if="singingUp" >
         <img class="mx-auto" style="display: block" src="../assets/Spinner-1s-200px.svg" />
       </div>
-      <div class="alert alert-danger mt-5" role="alert" v-if="this.errorMsg">
+      <div class="alert alert-danger mt-5" role="alert" v-show="this.errorMsg != ''">
         {{this.errorMsg}}
       </div>
       <form @submit.prevent="signup" v-if="!singingUp">
@@ -21,7 +21,7 @@
             <input type="password" class="form-control" id="confirmPassword"
             placeholder="Confirm Password" required v-model="user.confirmedPassword">
           </div>
-        <button type="submit" class="btn btn-primary float-right px-5">Sign Up</button>
+        <button type="submit" class="btn btn-primary px-5" style="width: 100%">Sign Up</button>
       </form>
     </div>
 </div>
@@ -74,8 +74,8 @@ export default {
           if(response.ok){
             return response.json();
           }
-            response.json().then((error) => {
-              throw new Error(error.message);
+            return response.json().then((error) => {
+                throw new Error(error.message);
             })
         }).then(() => {
             setTimeout(() =>{
@@ -92,7 +92,7 @@ export default {
       }
     },
     validUser() {
-      if(this.user.passord !== this.user.confirmedPassword){
+      if(this.user.passord != this.user.confirmedPassword){
         this.errorMsg = "The passwords must match.";
         return false;
       } else {
@@ -100,7 +100,7 @@ export default {
         if(res.error === null){
           return true;
         }
-          if(res.error.message.includes('email')){
+          if(res.error.message.includes('username')){
             this.errorMsg = 'Email is invalid'
           }else{
             this.errorMsg = "Password is invalid"
