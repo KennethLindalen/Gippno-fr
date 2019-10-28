@@ -1,7 +1,5 @@
 # Server for projekt
 
-MÅ FINNE UT AV FEIL MED Å IKKE FINNE URI FOR POST REQUEST
-
 ## Gjøreliste
 ### Authentisering
 * [x] Lage server
