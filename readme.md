@@ -1,6 +1,5 @@
-# Server for projekt
+# Prosjekt gjøreliste
 
-## Gjøreliste
 ### Authentisering
 * [x] Lage server
 * [x] Auth router
@@ -70,3 +69,28 @@
 * [ ] Hvis logget inn og går til logginn-/registreringssiden redirekt til dashboard
 * [ ] Hvis utlogget inn og går til dashboard redirekt til home
 * [ ] Beskyttet route backend
+
+
+
+### Funksjonalitet
+* [ ] Prosjektfordeling
+    * [ ] Database
+    * [ ] Prosjekt ID
+    * [ ] Prosjektfunksjonalitet
+        * [ ] Grafer for hva enn man måtte ønske
+        * [ ] Issuetracker
+            * [ ] Database
+        * [ ] Chat
+            * [ ] Socket.js import
+            * [ ] Database
+        * [ ] Kanban
+            * [ ] Database
+        * [ ] Dokumentasjon
+            * [ ] Database
+            * [ ] Markdown implementasjon
+        * [ ] Legge til medlemmer i prosjekt
+        * [ ] Tidtaker
+            * [ ] Database
+            * [ ] Mulig å se for andre medlemmer i prosjekt
+* [ ] Venner?
+* [ ] 
