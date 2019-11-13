@@ -1,7 +1,8 @@
 <template>
   <div class="home">
-    <div class="jumbotron">
-      <h1 class="display-3">Gippno - a better way to organize your project!</h1>
+    <div class="jumbotron pt-4">
+      <h1 class="display-4">Gippno - a better way to organize your projects!</h1>
+      <br>
       <p class="lead">
         HOVED INFO TEKST!HOVED INFO TEKST!
         HOVED INFO TEKST!
@@ -17,7 +18,7 @@
 
 
       </p>
-      <hr class="my-4" />
+      <hr class="my-4"/>
       <p>
         Mindre info tekst, Mindre info tekst,
         Mindre info tekst,
@@ -30,11 +31,13 @@
         <router-link :to="{name:'signup'}"
                      class="btn btn-primary btn-lg float-right ml-2 px-5"
                      role="button">
-        Sign Up</router-link>
+        Sign Up
+        </router-link>
         <router-link :to="{name:'login'}"
                      class="btn btn-primary btn-lg float-right px-5"
                      role="button">
-        Log in</router-link>
+        Log in
+        </router-link>
       </p>
     </div>
     <h2>News</h2>
