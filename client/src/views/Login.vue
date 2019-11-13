@@ -84,10 +84,10 @@ export default {
         return true;
       }
       if (result.error.message.includes('epost')) {
-        this.errorMsg = 'Email is invalid. 😭';
+        this.errorMsg = 'Email is invalid.';
       } else {
         console.log(result.error);
-        this.errorMsg = 'Password is invalid. 🙈';
+        this.errorMsg = 'Password is invalid.';
       }
       return false;
     },
