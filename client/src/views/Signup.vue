@@ -5,15 +5,16 @@
       <div v-if="singingUp" >
         <img class="mx-auto" style="display: block" src="../assets/Spinner-1s-200px.svg" />
       </div>
-      <div class="alert alert-danger mt-5" role="alert" v-show="this.errorMsg != ''">
-        {{this.errorMsg}}
+      <div class="alert alert-danger mt-3" role="alert" v-if="this.errorMsg">
+        {{errorMsg}}
       </div>
       <form @submit.prevent="signup" v-if="!singingUp">
           <div class="form-group">
             <label for="email">Email address</label>
             <input type="email" class="form-control" id="email"
-            aria-describedby="email help" placeholder="Enter email" required
+            placeholder="Enter email" required
             v-model="user.epost">
+            <label for="email">Username</label>
             <label for="password">Password</label>
             <input type="password" class="form-control" id="password"
             placeholder="Password" required v-model="user.passord">
@@ -35,10 +36,10 @@ const registerSchema = joi.object().keys({
     email: joi.string().trim().email().required(),
     password: joi.string().trim().min(8).max(32).required(),
     confirmedPassword: joi.string().trim().min(8).max(32).required(),
-})
+});
 export default {
   data: () => ({
-    errorMsg: "",
+    errorMsg: '',
       singingUp: false,
     user: {
       epost: '',
@@ -68,7 +69,7 @@ export default {
             body: JSON.stringify(body),
                 headers:
                     {
-                      'Content-Type': 'application/json'
+                      'content-Type': 'application/json'
                     }
         }).then((response) => {
           if(response.ok){
@@ -92,7 +93,7 @@ export default {
       }
     },
     validUser() {
-      if(this.user.passord != this.user.confirmedPassword){
+      if(this.user.passord !== this.user.confirmedPassword){
         this.errorMsg = "The passwords must match.";
         return false;
       } else {

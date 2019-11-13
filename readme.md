@@ -46,16 +46,16 @@
                     * [x] Redirekt til login
     * [x] Innloggingssside
         * [x] Form: epost og passord
-            * [ ] Verifiser epost
-            * [ ] Verifiser passord
+            * [x] Verifiser epost
+            * [x] Verifiser passord
         * [ ] Når form blir "submitted"
-            * [ ] Valider epost
-                * [ ] Vis error
-            * [ ] Valider passord
-                * [ ] Vis error
-            * [ ] POST-forespørsel
-                * [ ] Vis error
-                * [ ] Hvis suksess
+            * [x] Valider epost
+                * [x] Vis error
+            * [x] Valider passord
+                * [x] Vis error
+            * [x] POST-forespørsel
+                * [x] Vis error
+                * [x] Hvis suksess
                     * [ ] Lagre JWT token i localStorage
                     * [ ] Redirekt til dashboard
 
@@ -93,4 +93,3 @@
             * [ ] Database
             * [ ] Mulig å se for andre medlemmer i prosjekt
 * [ ] Venner?
-* [ ] 

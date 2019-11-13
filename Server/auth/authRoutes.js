@@ -96,6 +96,7 @@ authRouter.post("/login", (req, res, next) => {
         })
     }else{
         errorCode422(res, next);
+
     }
 
 });

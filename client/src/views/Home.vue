@@ -3,13 +3,28 @@
     <div class="jumbotron">
       <h1 class="display-3">Gippno - a better way to organize your project!</h1>
       <p class="lead">
-        This is a simple hero unit, a simple jumbotron-style component for calling
-        extra attention to featured content or information.
+        HOVED INFO TEKST!HOVED INFO TEKST!
+        HOVED INFO TEKST!
+        HOVED INFO TEKST!HOVED INFO TEKST!
+        HOVED INFO TEKST!
+        HOVED INFO TEKST!
+        HOVED INFO TEKST!
+        HOVED INFO TEKST!
+        HOVED INFO TEKST!
+        HOVED INFO TEKST!
+        HOVED INFO TEKST!
+        HOVED INFO TEKST!
+
+
       </p>
       <hr class="my-4" />
       <p>
-        It uses utility classes for typography and spacing to space content out within the larger
-        container.
+        Mindre info tekst, Mindre info tekst,
+        Mindre info tekst,
+        Mindre info tekst,
+        Mindre info tekst,
+        Mindre info tekst,
+        Mindre info tekst,
       </p>
       <p class="lead pb-1">
         <router-link :to="{name:'signup'}"
@@ -26,12 +41,17 @@
 
     <div class="card mb-2">
       <div class="card-body">
-        <h4 class="card-title">Opening day</h4>
+        <h4 class="card-title">Title 2</h4>
         <h6 class="card-subtitle mb-2 text-muted">10.27.2019 9:26PM</h6>
         <p class="card-text">
-          While this might not have come to the official release date it is
-          currently in alpha, therefore everyone that joins get the first 2 months for free.
-          Some feedback would be highly appreciated so we can further improve our services!
+          Turpiss sunt buxums de rusticus nuclear vexatum iacere.
+          Turpiss sunt buxums de rusticus nuclear vexatum iacere.
+          Turpiss sunt buxums de rusticus nuclear vexatum iacere.
+          Turpiss sunt buxums de rusticus nuclear vexatum iacere.
+          Turpiss sunt buxums de rusticus nuclear vexatum iacere.
+          Turpiss sunt buxums de rusticus nuclear vexatum iacere.
+          Turpiss sunt buxums de rusticus nuclear vexatum iacere.
+
           <br />
           <br />Thanks,
           <br />- The Gippno team
@@ -45,14 +65,19 @@
     </div>
     <div class="card mb-2">
       <div class="card-body">
-        <h4 class="card-title">Upcoming changes</h4>
+        <h4 class="card-title">Title 1</h4>
         <h6 class="card-subtitle mb-2 text-muted">10.27.2019 9:26PM</h6>
         <p class="card-text">
-          Seeing that Gippno just released it has just the basics of features, there are
-          still plenty
-          in development and they will start coming out rather soon. For now, there is only
-          the kanban board, the documentation generator and the messaging capabilities.
-          More features to come shortly!
+            Turpiss sunt buxums de rusticus nuclear vexatum iacere.
+          Turpiss sunt buxums de rusticus nuclear vexatum iacere.
+          Turpiss sunt buxums de rusticus nuclear vexatum iacere.
+          Turpiss sunt buxums de rusticus nuclear vexatum iacere.
+          Turpiss sunt buxums de rusticus nuclear vexatum iacere.
+          Turpiss sunt buxums de rusticus nuclear vexatum iacere.
+          Turpiss sunt buxums de rusticus nuclear vexatum iacere.
+          <br />
+          <br />Thanks,
+          <br />- The Gippno team
         </p>
         <router-link :to="{name:'news'}"
                      href="#"
@@ -66,7 +91,7 @@
 
 <script>
 // @ is an alias to /src
-
+/* eslint-disable */
 export default {
   name: 'home',
   components: {},
