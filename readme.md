@@ -56,8 +56,8 @@
             * [x] POST-forespørsel
                 * [x] Vis error
                 * [x] Hvis suksess
-                    * [x] Lagre JWT token i localStorage
-                    * [x] Redirekt til dashboard
+                    * [ ] Lagre JWT token i localStorage
+                    * [ ] Redirekt til dashboard
 
 ### Ekstra stuff
 * [ ] Adminside med alle brukere
