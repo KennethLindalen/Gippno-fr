@@ -48,7 +48,7 @@
         * [x] Form: epost og passord
             * [x] Verifiser epost
             * [x] Verifiser passord
-        * [ ] Når form blir "submitted"
+        * [x] Når form blir "submitted"
             * [x] Valider epost
                 * [x] Vis error
             * [x] Valider passord
